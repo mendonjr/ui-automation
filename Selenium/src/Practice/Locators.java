@@ -10,7 +10,7 @@ public static void main(String[] args) throws InterruptedException {
 
 // TODO Auto-generated method stub
 
-//implicit wait - 2 seconds time out
+//implicit wait -2 seconds time out
 
 System.setProperty("webdriver.chrome.driver", "/Users/PRASAD/eclipse-workspace/Selenium/Chromedriver");
 
