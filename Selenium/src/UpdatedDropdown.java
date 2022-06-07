@@ -17,7 +17,6 @@ public class UpdatedDropdown {
 
 		dropdown.selectByVisibleText("9 Adults");
 
-		dropdown.selectByValue("8");
 		
 	}
 
