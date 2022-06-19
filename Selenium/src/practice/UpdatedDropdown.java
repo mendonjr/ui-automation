@@ -1,4 +1,5 @@
-package Practice;
+package practice;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -12,18 +13,18 @@ public class UpdatedDropdown {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		System.setProperty("webdriver.chrome.driver", "/Users/PRASAD/eclipse-workspace/Selenium/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();	
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		WebElement dd = driver.findElement(By.xpath("//*[@id='ctl00_mainContent_ddl_Adult']"));
-		Select dropdown=new Select(dd);
+		Select dropdown = new Select(dd);
 
 		dropdown.selectByIndex(4);
 
-		//dropdown.selectByVisibleText("9 Adults");
-		
+		// dropdown.selectByVisibleText("9 Adults");
+
 		System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 
 		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
@@ -32,13 +33,13 @@ public class UpdatedDropdown {
 
 		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 
-		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
+		if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
 
 		{
 
-		System.out.println("its enabled");
+			System.out.println("its enabled");
 
-		Assert.assertTrue(true);
+			Assert.assertTrue(true);
 
 		}
 
@@ -46,11 +47,10 @@ public class UpdatedDropdown {
 
 		{
 
-		Assert.assertTrue(false);
+			Assert.assertTrue(false);
 
 		}
 
-		
 	}
 
 }
