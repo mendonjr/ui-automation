@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.netty.handler.ssl.SslClientHelloHandler;
+
 public class Base {
 	
 	 static WebDriver driver = new ChromeDriver();
